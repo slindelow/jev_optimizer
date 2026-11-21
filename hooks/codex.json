@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{
+      "hooks": [{"type":"command", "command":"node \"$PLUGIN_ROOT/bin/hook.mjs\"", "timeout": 8}]
+    }],
+    "SessionStart": [{
+      "matcher": "^compact$",
+      "hooks": [{"type": "command", "command": "node \"$PLUGIN_ROOT/bin/compact.mjs\" codex", "timeout": 5}]
+    }]
+  }
+}

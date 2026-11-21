@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "jev_files": {
+      "command": "node",
+      "args": ["./bin/file-results-mcp.mjs"],
+      "cwd": ".",
+      "env_vars": ["JEV_OPTIMIZER_HOME"]
+    }
+  }
+}

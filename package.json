@@ -1,0 +1,14 @@
+{
+  "name": "jev-optimizer",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Route file and skill discovery with Jev and compress Claude conversations or Codex file results.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node bin/jev.mjs demo"
+  }
+}

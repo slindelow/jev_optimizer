@@ -1,0 +1,20 @@
+{
+  "name": "jev-tools",
+  "interface": {
+    "displayName": "Jev Tools"
+  },
+  "plugins": [
+    {
+      "name": "jev-optimizer",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "category": "Productivity",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+The compaction algorithm, state fitting, message types and answer validation in this directory come from [fast-jev-compaction at e3f262a](https://github.com/tamaratran/fast-jev-compaction/tree/e3f262a7f4d42bd8dd32ced30d26176f7cb545b0). The accompanying LICENSE contains the upstream MIT notice. The Claude host adapter also uses the upstream handle-preserving message conversion.
+
+The bundled copy limits batches to 32 calls (64 questions). Only the answer validation portion of the upstream request module is needed. Jev Optimizer supplies the transport, credential storage, budget accounting and workspace permissions.
