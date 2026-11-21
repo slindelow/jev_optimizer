@@ -1,0 +1,9 @@
+{
+  "name": "jev-tools-marketplace",
+  "version": "0.3.1",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.mjs plugins/jev-optimizer/tests/*.test.mjs",
+    "demo": "node plugins/jev-optimizer/bin/jev.mjs demo"
+  }
+}

@@ -1,5 +1,9 @@
 # Jev Optimizer build evidence
 
+## Marketplace packaging in 0.3.1
+
+Both marketplaces install `plugins/jev-optimizer/`. Codex can refresh the marketplace's Git index, reflogs and installation metadata independently of the installed hooks. Version 0.3.0 used the marketplace root as the plugin source, so a refresh could invalidate a previously approved hook hash. The packaging regression test checks both manifests use the same dedicated subtree.
+
 ## Combined plugin in 0.3.0
 
 The release candidate was installed into disposable Claude Code and Codex profiles. Ordinary prompts in a synthetic shipping project reached both hosts with file and skill suggestions. The host integration tests used local model-protocol servers so the next model input could be inspected. TypeSafe Jev decisions were live.

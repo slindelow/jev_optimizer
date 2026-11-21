@@ -24,7 +24,7 @@ Claude conversation compaction requires function hooks. Enable `CLAUDE_CODE_ENAB
 | Claude conversation compaction | Continue a long coding conversation | At a compaction event, Jev can score older calls and results. The hook shortens history while preserving user instructions and recent messages. Claude can use its native summary on fallback. |
 | Codex file-result compression | “Find where the shipping module handles address changes.” | For an eligible large result, the plugin prepares selected passages. The agent can retrieve those passages or recover the original. Codex owns its native reads and conversation compactor. |
 
-A greeting passes through. The existing test matcher is available as a separate opt-in feature. See [compaction behavior](docs/compaction.md) for host-specific triggers and limits.
+A greeting passes through. The existing test matcher is available as a separate opt-in feature. See [compaction behavior](plugins/jev-optimizer/docs/compaction.md) for host-specific triggers and limits.
 
 ## Configuration
 

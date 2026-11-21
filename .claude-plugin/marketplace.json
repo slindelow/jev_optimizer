@@ -8,9 +8,9 @@
   "plugins": [
     {
       "name": "jev-optimizer",
-      "source": "./",
+      "source": "./plugins/jev-optimizer",
       "description": "Route file and skill discovery with Jev and compress Claude conversations or Codex file results.",
-      "version": "0.3.0"
+      "version": "0.3.1"
     }
   ]
 }

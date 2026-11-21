@@ -129,13 +129,8 @@ test("bundled command, independent switches, scope, hook and reporting", (t) => 
   assert.equal(cli(["disconnect"]).provider, null);
   assert.ok(cli(["report"]).activity.length);
 });
-test("both marketplaces point at the same distributed skills", () => {
+test("both host manifests declare the installed plugin", () => {
   const read = (p) => JSON.parse(readFileSync(path.join(root, p), "utf8"));
   for (const f of [".claude-plugin/plugin.json", ".codex-plugin/plugin.json"])
     assert.equal(read(f).name, "jev-optimizer");
-  for (const f of [
-    ".claude-plugin/marketplace.json",
-    ".agents/plugins/marketplace.json",
-  ])
-    assert.equal(read(f).plugins[0].name, "jev-optimizer");
 });

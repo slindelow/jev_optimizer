@@ -8,7 +8,7 @@
       "name": "jev-optimizer",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/jev-optimizer"
       },
       "category": "Productivity",
       "policy": {
